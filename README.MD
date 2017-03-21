@@ -16,9 +16,6 @@
 ```bash
 npm install --save smalleast/react-avatar
 
-#OR
-
-yarn install smalleast/react-avatar
 ```
 
 + code:
