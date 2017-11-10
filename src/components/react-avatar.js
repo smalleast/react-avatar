@@ -1,16 +1,15 @@
 import './style.scss';
-import classNames from 'classnames';
 export default class extends React.Component {
   static propTypes = {
-    className: React.PropTypes.string,
-    onClick: React.PropTypes.func,
-    url: React.PropTypes.string,
-    title: React.PropTypes.string,
-    size: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.object,
+    className: PropTypes.string,
+    onClick: PropTypes.func,
+    url: PropTypes.string,
+    title: PropTypes.string,
+    size: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.object,
     ]),
-    radius: React.PropTypes.string,
+    radius: PropTypes.string,
   };
 
   static defaultProps = {
@@ -32,7 +31,7 @@ export default class extends React.Component {
 
   render() {
     const size = this.processSize(this.props.size);
-    const {className, radius, title,  url, onClick} = this.props;
+    const {className, radius, title, url, onClick} = this.props;
     return (
       <div
         onClick={onClick}
