@@ -1,4 +1,4 @@
-.react-avatar{
+.react-avatar {
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -11,5 +11,8 @@
     height: 100%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    &[data-cover=false] {
+      object-fit: contain;
+    }
   }
 }

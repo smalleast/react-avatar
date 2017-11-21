@@ -1,4 +1,5 @@
 import './style.scss';
+
 export default class extends React.Component {
   static propTypes = {
     className: PropTypes.string,
@@ -10,6 +11,7 @@ export default class extends React.Component {
       PropTypes.object,
     ]),
     radius: PropTypes.string,
+    cover: PropTypes.boolean
   };
 
   static defaultProps = {
@@ -31,7 +33,7 @@ export default class extends React.Component {
 
   render() {
     const size = this.processSize(this.props.size);
-    const {className, radius, title, url, onClick} = this.props;
+    const {className, radius, title, url, cover, onClick} = this.props;
     return (
       <div
         onClick={onClick}
@@ -40,7 +42,7 @@ export default class extends React.Component {
           height: size.height,
           borderRadius: radius
         }} className={classNames('react-avatar', className)}>
-        <img src={url} alt={title}/>
+        <img src={url} alt={title} data-cover={cover}/>
       </div>
     );
   }
