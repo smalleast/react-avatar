@@ -17,7 +17,8 @@ export default class extends React.Component {
   static defaultProps = {
     radius: '100px',
     size: '32px',
-    title: ''
+    title: '',
+    cover: true
   };
 
   processSize() {
