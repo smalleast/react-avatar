@@ -11,7 +11,7 @@ export default class extends React.Component {
       PropTypes.object,
     ]),
     radius: PropTypes.string,
-    cover: PropTypes.boolean
+    cover: PropTypes.bool
   };
 
   static defaultProps = {
