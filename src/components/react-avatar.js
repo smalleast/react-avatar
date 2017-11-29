@@ -43,7 +43,9 @@ export default class extends React.Component {
           height: size.height,
           borderRadius: radius
         }} className={classNames('react-avatar', className)}>
-        <img src={url} alt={title} data-cover={cover}/>
+        <img src={url} alt={title} data-cover={cover} style={{
+          borderRadius: radius
+        }}/>
       </div>
     );
   }
